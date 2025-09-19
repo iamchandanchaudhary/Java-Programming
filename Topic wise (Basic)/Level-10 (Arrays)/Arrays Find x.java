@@ -1,6 +1,6 @@
 import java.util.*;
 
-class FirstArrays {
+class FirstArray {
     public static void main(String args[]) {
     
     //Beauty
@@ -16,9 +16,9 @@ class FirstArrays {
     for(int i = 0; i < size; i++) {
         number[i] = sc.nextInt();
     }
+
     //Beauty
     System.out.print("Enter x no. : ");
-
     int x = sc.nextInt();
 
     //output
