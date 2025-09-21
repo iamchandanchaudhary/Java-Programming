@@ -1,6 +1,6 @@
 class FirstArray {
     public static void main(String args[]){
-        System.out.println("2D Arrays:- \n");
+        System.out.println("Finding the Sum of 2nd row in 2D Arrays:- \n");
 
         int numbers[][] = {{2, 3, 4, 5}, {6, 7, 8, 9}, {7, 4, 2, 3}};
 
@@ -18,12 +18,11 @@ class FirstArray {
             System.out.println();
         }
 
-        for(int i = 0; i < row; i++) {
-            for(int j = 0; j < col; j++) {
-                sum += numbers[1][j];
-            }
+        // sum of 2nd row
+        for(int j = 0; j < col; j++) {
+            sum += numbers[1][j];
         }
 
-        System.out.println("Sum: " + sum);
+        System.out.println("Sum of 2nd Row: " + sum);
     }
 }
