@@ -2,7 +2,7 @@ import java.util.*;
 
 class FirstArray {
     public static void main(String args[]){
-        System.out.println("2D Arrays :- \n");
+        System.out.println("Creating 2D Arrays :- \n");
 
         System.out.print("Enter rows No. : ");
 
@@ -14,16 +14,17 @@ class FirstArray {
 
         int numbers[] [] = new int[rows] [cols];
 
-        System.out.println("\nEnter your Numbers : ");
+        System.out.println("\nEnter your Values : ");
         //input
         //rows
         for(int i = 0; i < rows; i++) {
             //cols
             for(int j = 0; j < cols; j++) {
+                System.out.print("Enter value of index (" + i + "," + j + "): " );
                 numbers[i] [j] = sc.nextInt();
             }
         }
-        System.out.println("\nYour Numbers in 2D : ");
+        System.out.println("\nYour Values in 2D Array(Matrix): ");
 
         //output
         //rows

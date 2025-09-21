@@ -3,11 +3,11 @@ import java.util.*;
 class FirstArrays {
     public static void main(String args[]) {
 
-        System.out.print("Enter rows no. : ");
+        System.out.print("Enter rows no.: ");
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();
 
-        System.out.print("Enter cols no. : ");
+        System.out.print("Enter cols no.: ");
         int cols = sc.nextInt();
 
         int numbers[] [] = new int[rows] [cols];
@@ -18,10 +18,11 @@ class FirstArrays {
         for(int i = 0; i < rows; i++) {
             //cols
             for(int j = 0; j < cols; j++) {
+                System.out.print("Enter value of index (" + i + "," + j + "): " );
                 numbers [i] [j] = sc.nextInt();
             }
         }
-        System.out.print("Enter your need no. : ");
+        System.out.print("Find any no.: ");
         int x = sc.nextInt();
 
         //rows
