@@ -7,10 +7,6 @@ class FirstString {
 
         String name3 = new String("Chandan");
 
-        // s1 > s2 : +ve
-        // s1 == s2 : 0
-        // s1 < s2 : -ve
-
         // Method 1
         System.out.println("Method 1:");
         if(name1 == name2) {
@@ -26,6 +22,11 @@ class FirstString {
         }
         
         // Method 2
+
+        // s1 > s2 : +ve
+        // s1 == s2 : 0
+        // s1 < s2 : -ve
+
         System.out.println("\nMethod 2:");
         if(name1.compareTo(name2) == 0) {
             System.out.println("Strings are Equal.");
