@@ -1,5 +1,7 @@
 class FirstClass {
     public static void main(String args[]) {
+        System.out.println("Append Operation:- \n");
+
         StringBuilder sb = new StringBuilder("Chandan");
 
         System.out.println("Origenal Name : " + sb);
@@ -16,5 +18,15 @@ class FirstClass {
 
         //System.out.println("Origenal name : Chandan");
         System.out.println("After append : " + sb);
+
+
+        StringBuilder alphabet = new StringBuilder("");
+
+        for(char ch = 'a'; ch <= 'z'; ch++) {
+            alphabet.append(ch);
+        }
+
+        System.out.println("\nAlphabet: " + alphabet);
+
     }
 }

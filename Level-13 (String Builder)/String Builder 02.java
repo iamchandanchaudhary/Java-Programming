@@ -1,6 +1,4 @@
-import java.util.*;
-
-class Strings {
+class FirstClass {
     public static void main(String args[]) {
         System.out.println("String Builder(Basic Operations) :- \n");
 
