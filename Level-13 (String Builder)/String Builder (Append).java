@@ -26,7 +26,12 @@ class FirstClass {
             alphabet.append(ch);
         }
 
+        // ==> Time Complexity
+        // String Builder => O(26)
+        // String => O(26^2)
+
         System.out.println("\nAlphabet: " + alphabet);
+        System.out.println("Length: " + alphabet.length());
 
     }
 }
