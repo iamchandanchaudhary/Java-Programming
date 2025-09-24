@@ -1,39 +1,30 @@
 class FirstClass {
     public static void main(String args[]) {
-        System.out.println("String Builder(Basic Operations) :- \n");
+        System.out.println("String Builder Operations:- \n");
 
-        StringBuilder name = new StringBuilder("Chandan");
+        StringBuilder sb = new StringBuilder("Chandan");
 
-        // Origenal Name 
-        System.out.println("Origenal Name : " + name);
+        System.out.println("Origenal Name : " + sb);
 
-        // find char at position
-        char char_Index = name.charAt(3);
-        System.out.println("CharAt Index(3) : " + char_Index);
+        //deleting
+        sb.delete(0, 1);
+        System.out.println("After deleting Char : " + sb);
 
-        // set another character at position
-        name.setCharAt(0, 'M');
-        System.out.println("Set Another : " + name);
+        //inserting
+        sb.insert(0, 'C');
+        System.out.println("Inserting char : " + sb);
 
-        // delete character
-        name.delete(0, 1);
-        System.out.println("After delete : " + name);
+        //set char at
+        sb.setCharAt(5, 'u');
+        System.out.println("Changing the char : " + sb);
 
-        // insert character at position
-        name.insert(0, 'C');
-        System.out.println("Insert Something : " + name);
+        //deleting
+        sb.delete(6, 7);
+        System.out.println("Final Name : " + sb);
 
-        // add character
-        name.append(" Chaudhary");
-        System.out.println("New Name : " + name);
+        //Character
+        System.out.println("The char at 0 index : " + sb.charAt(0));
 
-        // string length
-        System.out.println("Length of String : " + name.length());
-
-        System.out.print("Reverse of Your Name : ");
-        for(int i = 16; i >= 0; i--) {
-            System.out.print(name.charAt(i));
-        }
-        System.out.println();
+        System.out.println("Thank you :)");
     }
 }

@@ -1,30 +1,18 @@
 class FirstClass {
-    public static void main(String args[]) {
-        System.out.println("String Builder Operations:- \n");
-
-        StringBuilder sb = new StringBuilder("Chandan");
-
-        System.out.println("Origenal Name : " + sb);
-
-        //deleting
-        sb.delete(0, 1);
-        System.out.println("After deleting Char : " + sb);
-
-        //inserting
-        sb.insert(0, 'C');
-        System.out.println("Inserting char : " + sb);
-
-        //set char at
-        sb.setCharAt(5, 'u');
-        System.out.println("Changing the char : " + sb);
-
-        //deleting
-        sb.delete(6, 7);
-        System.out.println("Final Name : " + sb);
-
-        //Character
-        System.out.println("The char at 0 index : " + sb.charAt(0));
-
-        System.out.println("Thank you :)");
+    public static void main(String[] args) {
+        
+        StringBuilder alphabet = new StringBuilder("");
+        
+        for(char ch = 'a'; ch <= 'z'; ch++) {
+            alphabet.append(ch);
+        }
+        
+        // ==> Time Complexity
+        // String Builder => O(26)
+        // String => O(26^2)
+        
+        System.out.println("\nAlphabet: " + alphabet);
+        System.out.println("Length: " + alphabet.length());
+        
     }
 }
