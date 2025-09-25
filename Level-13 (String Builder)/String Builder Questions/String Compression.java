@@ -24,7 +24,10 @@ class FirstClass {
         System.out.println("String Compression:- \n");
         
         String str = "aaabbcccdd";
-        System.out.println(stringCompression(str));
+        System.out.println("Original String: " + str);
+        System.out.println("Compressed String: " + stringCompression(str));
+        
+        System.out.println("Compressed String: " + stringCompression("abcd"));
         
     }
 }
